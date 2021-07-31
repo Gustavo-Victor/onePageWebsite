@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo a{
+    color: #16507b;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a{
+    color: #16507b;
+    font-size: 14px;
+}
+
+.menu ul li a:hover, .logo a:hover{
+    color: #007bff;
+}
+
+.menu ul li.btn-menu a{
+    padding: 6px 16px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 7px;
+}
+
+#botao{
+    padding: 10px 30px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.menu ul li.btn-menu a:hover, #botao:hover{
+    background-color: #0099ff;
+    transition: 0.5s;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu-mobile-itens{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.menu-mobile-itens ul{
+    margin-bottom: 3%;
+}
+
+.menu-mobile-itens a{
+    display: block;
+    text-decoration: none;
+    color: #0858ad;
+}
+
+.menu-mobile-itens.show{
+    opacity: 1;
+}
+
+.menu-mobile-itens.hide{
+    opacity: 0;
+}
+
+/*main*/
+.main{
+    background-image: url('https://bootstrapmade.com/demo/templates/OnePage/assets/img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+
+.main .center .main_cta {
+    width: 100%;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.main .center .main_cta h2{
+    color: #16507b;   
+    font-size: 45px;
+}
+
+.main .center .main_cta p{
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0 20px 0;
+}
+
+.main .center .main_cta button{
+    background-color: #007bff;
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.main .center .diferenciais{
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main .center .diferenciais .diferente-single{
+    background-color: white;
+    flex: 1;
+    border-radius: 10px;    
+    padding: 50px 20px;
+}
+
+.main .center .diferenciais .diferente-single i{
+    color: #16507b;
+    font-size: 32px;
+}
+
+.main .center .diferenciais .diferente-single h3{
+    color: #16507b;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.main .center .diferenciais .diferente-single p{
+    color: rgb(49, 49, 49);
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+/*sessão sobre*/
+.about{
+    padding: 4% 0;
+}
+
+.about .center{
+    justify-content: center;
+}
+
+.about .call-about{
+    width: 100%;
+    text-align: center;
+}
+
+.call-about h2{
+    color: #16507b;  
+    text-align: center;
+}
+
+.call-about p{
+    font-size: 14px;  
+    color: gray;
+    margin: 2% 0;
+}
+
+.about .content-about{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.content-about div{
+    flex: 1;    
+}
+
+.content-about div ul li{
+    list-style-type: none;
+    margin-top: 3%;
+}
+
+.content-about div ul{
+    margin-top: 3%;
+}
+
+.content-about div ul i{
+    color: #007bff;
+    margin-right: 1%;
+}
+
+.content-about div p, .content-about div ul li{
+    color:rgb(49, 49, 49);
+}
+
+.content-about div button{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+    margin-top: 2%;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.content-about div button:hover{
+    background-color: #007bff;
+    color: white;
+    transition: 0.4s;
+}
+
+
+/*conquistas*/
+.conquistas{
+    background-color: #f8fbfe;
+    padding: 5% 0;
+    width: 100%;
+}
+
+.conquistas .center{
+    justify-content: center;
+}
+
+.conquista-single{
+    flex: 1;
+    text-align: center;
+}
+
+.conquista-single h2, .conquista-single p{
+    color: #124265;
+}
+
+.conquista-single h2{
+    font-size: 30px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .main .center .diferenciais .diferente-single{
+        flex: 0 0 100%;
+        margin-bottom: 2%;
+    }
+
+    .content-about div{
+        flex-basis: 100%;
+        margin-bottom: 2%;
+    }
+
+    .conquista-single{
+        flex-basis: 50%;
+        margin-bottom: 5%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+        cursor: pointer;
+        font-size: 23px;
+    }
+
+    .menu-mobile:hover{
+        color: #124265;
+        transition: .3s;
+    }
+}
