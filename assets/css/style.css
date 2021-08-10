@@ -563,7 +563,15 @@ i.fa-basketball-ball:hover{
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px 15px;
+    transition: 0.3s;
 }
+
+.call-to-action.conquistas .center a:hover{
+    background-color: white;
+    color: #007bff;
+}
+
+
 
 
 
