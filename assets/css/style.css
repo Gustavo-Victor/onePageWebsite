@@ -263,7 +263,7 @@ li{
 /*conquistas*/
 .conquistas{
     background-color: #f8fbfe;
-    padding: 5% 0;
+    padding: 4% 0;
     width: 100%;
 }
 
@@ -331,7 +331,7 @@ li{
 
 /*clientes conquista*/
 #clientes{
-    padding: 3% 0;
+    padding: 4% 0;
 }
 
 #clientes .center{
@@ -366,7 +366,7 @@ li{
 
 /*depoimentos*/
 section.depoimentos{
-    padding: 40px 0;
+    padding: 4% 0;
     width: 100%;
 }
 
@@ -386,8 +386,8 @@ section.depoimentos .center{
 }
 
 .depoimento-chamada p{
-    color: rgb(49, 49, 49);
-    font-size: 15px;
+    color: gray;
+    font-size: 14px;
     margin: 2% 0;
 }
 
@@ -515,23 +515,23 @@ i.fa-basketball-ball:hover{
     color:#0099ff;
 }
 
-.fa-file-alt:hover{
+i.fa-file-alt:hover{
     color: orange;
 }
 
-.fa-clock:hover{
+i.fa-clock:hover{
     color: rgb(128, 0, 75);
 }
 
-.fa-leaf:hover{
+i.fa-leaf:hover{
     color: green;
 }
 
-.fa-play:hover{
+i.fa-play:hover{
     color: rgb(255, 72, 0);
 }
 
-.fa-archway:hover{
+i.fa-archway:hover{
     color: aqua;
 }
 
@@ -572,8 +572,241 @@ i.fa-basketball-ball:hover{
 }
 
 
+/*team*/
+.team.conquistas{   
+    text-align: center;
+}
+
+.team.conquistas .center > h2{
+    text-transform: uppercase;
+    color: #16507b;
+    font-size: 30px;
+    text-align: center;
+}
+
+.team.conquistas .center > p{
+    color: gray;
+    font-size: 14px;
+    margin-top: 2%;
+}
+
+.team.conquistas .center{
+    margin: 2% auto;
+    padding: 0;
+}
+
+.staff{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 0.8rem;
+    margin-top: 3%;    
+}
+
+.worker{
+    flex-basis: 24%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 30px 1px #eee;   
+    padding-bottom: 3%;
+}
+
+.worker img{
+    width: 100%;
+}
+
+.worker h3 {
+    margin-top: 10%;
+    font-size: 19px;
+    color: #16507b;
+}
+
+.worker figure {
+    position: relative;
+}
+
+.worker figure figcaption{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3px;
+    text-align: center;
+    bottom: 0px;
+    color: black;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.worker figure figcaption i{
+    color: #16507b;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.worker figure figcaption i:hover{
+    color: #007bff;
+}
+
+.worker p{
+    color: gray;
+    font-size: 14px;
+}
+
+.worker:hover > figure figcaption{
+    opacity: 1;
+}
 
 
+/*pricing*/
+.pricing{
+    padding: 4% 0;
+    width: 100%;
+}
+
+.pricing .center{
+    text-align: center;
+    justify-content: center;
+}
+
+.pricing .center > h2{
+    text-transform: uppercase;
+    color: #16507b;
+    font-size: 30px;
+    text-align: center;   
+}
+
+.pricing .center p{
+    color: gray;
+    font-size: 14px;
+    margin: 2% 0;
+}
+
+
+.pricing .center .offers{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pricing .center .offer-single{
+    flex: 1;
+    padding: 2.5rem;    
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pricing .center .offer-single:nth-of-type(odd){
+    background-color: white;
+    box-shadow: 1px 1px 30px 1px #eee;  
+}
+
+.pricing .center .offer-single:nth-of-type(even){
+    background-color: #007bff;
+    color: white;
+}
+
+.pricing .center .offer-single h3.offer-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 8%;
+    font-weight: 500;
+}
+
+.pricing .center .offer-single:nth-of-type(odd) h3.offer-title{ 
+    color: #16507b;   
+}
+
+.pricing .center .offer-single h4.offer-featured{
+    display: inline-block;
+    margin-bottom: 8%;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.pricing .center .offer-single h4.offer-featured sup{    
+    font-size: 20px;
+}
+
+.pricing .center .offer-single:nth-of-type(odd) h4{
+    color: #007bff; 
+}
+
+.pricing .center .offer-single span.offer-period{
+    font-weight: 300;
+}
+
+.pricing .center .offer-single:nth-of-type(odd) span.offer-period{
+    color: gray;
+}
+
+.pricing .center .offer-single ul.offer-list li{
+    margin-bottom: 7%;
+    font-size: 14px;
+}
+
+.pricing .center .offer-single:nth-of-type(odd) ul.offer-list li{
+    color: #16507b;
+}
+
+.pricing .center .offer-single ul.offer-list li.disabled{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.pricing .center .offer-single:nth-of-type(even) ul.offer-list li.disabled{
+    color: white;
+}
+
+.pricing .center .offer-single a.offer-button{
+    padding: 5px 30px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: transparent;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.offer-single:nth-of-type(odd) a.offer-button{
+    color: #16507b;
+    border: 2px solid #007bff;
+}
+
+.offer-single:nth-of-type(even) a.offer-button{
+    color: white;
+    border: 2px solid white; 
+}
+
+.offer-single:nth-of-type(odd) a.offer-button:hover{
+    background-color: #007bff;;
+    color: white;    
+}
+
+.offer-single:nth-of-type(even) a.offer-button:hover{
+    background-color: white;
+    color: #007bff;;     
+}
+
+
+/*faq*/
+
+
+/*contact*/
+
+
+/*footer*/
 
 
 
@@ -643,5 +876,23 @@ i.fa-basketball-ball:hover{
         flex-grow: 1;
     }
 
-    
+
+    .team.conquistas{
+        padding: 4% 4%;   
+        text-align: center;
+    }
+
+    .worker{        
+        flex-basis: 100%;        
+        margin-top: 5%;
+    }
+ 
+    .pricing .center .offer-single{
+        flex-basis: 100%;
+    }
+
+    .pricing .center{
+        padding: 1% 4%;
+    }
+
 }
