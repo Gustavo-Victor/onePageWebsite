@@ -8,7 +8,7 @@
 .center{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -290,7 +290,6 @@ li{
 }
 
 .sobre-imagem .center{
-    padding: 0 2%;
     display: flex;
     gap: 2%;
     justify-content: space-between;
@@ -897,6 +896,141 @@ i.fa-chevron-down{
 }
 
 /*contact*/
+.contact{
+    width: 100%;
+    padding: 5% 0;
+}
+
+.contact .center{
+    justify-content: center;    
+    padding: 0;
+}
+
+.contact .center > h2{
+    text-transform: uppercase;
+    color: #16507b;
+    font-size: 30px;
+    text-align: center; 
+}
+
+.contact .center > p{
+    color: gray;
+    font-size: 14px;
+    margin: 2% 0;
+    text-align: center;
+}
+
+.contact .center iframe{
+    width: 100%;
+    display: block;
+    margin: 1% 0 3% 0;
+    border-radius: 5px;
+    min-height: 400px;
+}
+
+.contact .center .contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.communication{
+    flex-basis: 30%;
+}
+
+.communication .communication-item{
+    margin-bottom: 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+.alinhamento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3%;
+}
+
+.communication .communication-item i{
+    color: #0858ad;
+    background-color: #c8e8fd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+.communication .communication-item h4{
+    color: #124265;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+.communication .communication-item p{
+    color: #0099ff;
+    font-size: 14px;
+    display: block;
+}
+
+
+.contact-form{
+    flex-basis: 65%;
+}
+
+.contact-form input, .contact-form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 3%;
+    height: 40px;
+    padding: 0 1%;
+    outline: none;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.contact-form textarea{
+    padding: 1%;
+    min-height: 120px;
+}
+
+.linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+}
+
+.linha input{
+    flex: 1;
+}
+
+.contact-form button#contact-button{
+    display: block;
+    color: white;
+    background: #007bff;
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+button#contact-button:hover{
+    background: #0099ff;
+}
 
 
 /*footer*/
@@ -992,5 +1126,11 @@ i.fa-chevron-down{
         padding: 1% 4%;
     }
 
+    .contact .center, .about .center, .sobre-imagem .center, .service-container .center{
+        padding: 1% 4%;
+    }
 
+    .communication, .contact-form{
+        flex-basis: 100%;
+    }
 }
