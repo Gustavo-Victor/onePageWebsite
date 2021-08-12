@@ -12,3 +12,13 @@ el.addEventListener('click', () => {
         menuItens.classList.remove('hide');
     }
 })
+
+
+//faqs
+var faqs = window.document.querySelectorAll('.faq-single');
+
+faqs.forEach(faq_single => {
+    faq_single.addEventListener('click', () =>{
+        faq_single.classList.toggle('active');
+    });
+});
