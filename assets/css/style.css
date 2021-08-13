@@ -958,15 +958,21 @@ i.fa-chevron-down{
 }
 
 .communication .communication-item i{
-    color: #0858ad;
+    color: #007bff;
     background-color: #c8e8fd;
     border-radius: 5px;
     padding: 10px;
     font-size: 15px;
     display: block;
-    width: 10%;
+    width: 40px;
     height: 100%;
     text-align: center;
+    transition: 0.3s;
+}
+
+.communication .communication-item i:hover{
+    color:  #c8e8fd;
+    background-color: #007bff;
 }
 
 .communication .communication-item h4{
@@ -1033,7 +1039,205 @@ button#contact-button:hover{
 }
 
 
+/*botão de voltar ao topo*/
+.topo{
+    position: fixed;
+    bottom: 40px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    right: 10px;
+    background-color:#007bff;
+    color: white;
+    transition: 0.3s;
+}
+
+.topo:hover{
+    background-color:#0099ff;
+}
+
 /*footer*/
+#footer{
+    margin-top: auto;
+    padding: 0;
+    min-width: 100%;
+    box-shadow: 1px 1px 20px 1px rgba(158, 157, 157, 0.2);
+}
+
+#footer .center{
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;    
+    padding: 4% 0;
+    margin: 0 auto;
+}
+
+
+#footer .center.secundario{    
+    background-color: #f8fbfe;
+    padding: 2% 0;
+}
+
+
+#footer .center .footer-info{
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    gap: 1rem;
+}
+
+.footer-info div{
+    flex: 1;
+}
+
+.footer-info div.newsletter{
+    flex: 1.5;
+}
+
+.footer-info .one-page h3{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.footer-info .one-page p{
+    color:rgb(95, 95, 95);
+    font-size: 14px;
+    margin-top: 1%;
+}
+
+.footer-info .one-page p.margem{
+    margin-top: 2rem;
+}
+
+.footer-info .list h4{
+    color: #16507b;
+    font-size: 16px;
+}
+
+.footer-info .list li{
+    margin-top: 1rem;
+}
+
+.footer-info .list li a i{
+    font-size: 11px;
+    color: #007bff;
+}
+
+.footer-info .list li a{
+    font-size: 15px;
+    color:rgb(95, 95, 95);
+    transition: 0.3s;
+}
+
+.footer-info .list li a:hover{
+    color: #007bff;
+}
+
+.footer-info .newsletter h4{
+    color: rgb(49, 49, 49);
+    font-size: 16px;
+}
+
+.footer-info .newsletter p{
+    margin: 1rem 0;
+    color: rgb(49, 49, 49);
+    font-size: 15px;
+}
+
+.footer-info .newsletter form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter form input{
+    height: 45px;
+    outline: none;    
+    border: none;    
+}
+
+.footer-info .newsletter input[type="email"]{
+    width: 70%;
+    padding: 0 1%;
+    flex: 2;
+    border: 1px solid #007bff;
+    border-right: none;
+    border-radius: 5px 0 0px 5px;
+}
+
+.footer-info .newsletter input[type="submit"]{
+    border-radius: 0px 5px 5px 0px;
+    background: #007bff;
+    color: white;
+    flex: 1; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-info .newsletter input[type="submit"]:hover{
+    background-color: #0099ff;
+}
+
+
+#footer .center .social-media{
+    width: 1100px;
+    margin: auto;    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-media div{
+    flex: 1;
+}
+
+.social-media .copy{
+    flex: 4;
+}
+
+
+.social-media .copy p{
+    font-size: 15px;
+    color:rgb(49, 49, 49);
+}
+
+.copy p.menor{
+    font-size: 14px;
+}
+
+.social-media .copy p a{
+    color: #0858ad;
+    transition: 0.3s;
+}
+
+.social-media .copy p a:hover{
+    color: #007bff;
+}
+
+.media ul{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.media ul li a i{
+    color:white;
+    background-color: #007bff;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.media ul li a i:hover{
+    background-color: #0099ff;
+}
+
 
 
 
@@ -1126,11 +1330,25 @@ button#contact-button:hover{
         padding: 1% 4%;
     }
 
-    .contact .center, .about .center, .sobre-imagem .center, .service-container .center{
+    .contact .center, .about .center, .sobre-imagem .center, #service-section .center, .call-to-action.conquistas .center, header nav.center{
         padding: 1% 4%;
     }
 
     .communication, .contact-form{
         flex-basis: 100%;
+    }
+
+
+    .footer-info div, .social-media div{
+        flex-basis: 100%;
+        margin: 2% 0;
+    }
+
+    #footer .center, #footer .center.secundario{
+        padding: 2% 4%;
+    }
+
+    .social-media .copy{
+        text-align: center;
     }
 }
