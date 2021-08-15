@@ -5,6 +5,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+header{
+    background-color: white;
+    padding: 0.8rem 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 .center{
     max-width: 1100px;
     margin: 0 auto;
@@ -15,10 +27,23 @@
     flex-wrap: wrap;
 }
 
-header{
-    background-color: white;
-    padding: 20px 0;
-    border-bottom: 1px solid rgb(200, 200, 200);
+nav.center{
+    justify-content: space-between;
+}
+
+nav.center i{
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+    color: rgb(49, 49, 49);
+    display: none;
+    position:fixed;
+    top: 1.2rem;
+    right: 1.6rem;
+    cursor: pointer;
+}
+
+nav.center i:hover{
+    color: #007bff;
 }
 
 a{
@@ -40,6 +65,7 @@ li{
     display: flex;
     list-style-type: none;
     align-items: center;
+    justify-content: center;
 }
 
 .menu ul li {
@@ -71,44 +97,13 @@ li{
 
 .menu ul li.btn-menu a:hover, #botao:hover{
     background-color: #0099ff;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
-/*menu mobile*/
-.menu-mobile{
-    display: none;
+.menu li a.link.active{
+    color: #0099ff;
 }
 
-.menu-mobile-itens{
-    position: absolute;
-    left: 0;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    border-bottom: 2px solid blue;
-    display: block;
-    opacity: 0;
-    transition: 0.3s linear;
-}
-
-.menu-mobile-itens ul{
-    margin-bottom: 3%;
-}
-
-.menu-mobile-itens a{
-    display: block;
-    text-decoration: none;
-    color: #0858ad;
-}
-
-.menu-mobile-itens.show{
-    opacity: 1;
-}
-
-.menu-mobile-itens.hide{
-    opacity: 0;
-}
 
 /*main*/
 .main{
@@ -284,7 +279,8 @@ li{
     font-size: 30px;
 }
 
-/*sobre*/
+
+/*sobre imagem*/
 .sobre-imagem{
     padding: 5% 0;
 }
@@ -299,6 +295,7 @@ li{
 
 .sobre-imagem .center .img-sobre-imagem{
     width: 50%;
+    display: block;
     max-width: 100%;
 }
 
@@ -308,11 +305,16 @@ li{
 
 .sobre-imagem .center .conteudo-sobre-imagem h2{
     color: #16507b;
+    margin-bottom: 1rem;
 }
 
 .sobre-imagem .center .conteudo-sobre-imagem i{
     color: #007bff;
     margin-right: 1%;
+}
+
+.sobre-imagem .center .conteudo-sobre-imagem ul{
+    margin: 2rem 0;
 }
 
 .sobre-imagem .center .conteudo-sobre-imagem ul li, .conteudo-sobre-imagem p {
@@ -321,12 +323,12 @@ li{
 }
 
 .sobre-imagem .center .conteudo-sobre-imagem p#diferente {
-    font-style:
-    italic;
+    font-style: italic;
     font-size: 14px;
     color:gray;
     margin: 2% 0;
 }
+
 
 /*clientes conquista*/
 #clientes{
@@ -1243,6 +1245,43 @@ button#contact-button:hover{
 
 /*media query*/
 @media screen and (max-width: 768px){
+    
+    /*menu*/
+
+    nav.center{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;        
+    }
+
+    .menu ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left; 
+        width: 100%;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        transition: 0.3s ease-in-out;
+        display: none;
+    }
+
+    nav.center i{
+        display: block;
+    }
+
+    .menu ul li.btn-menu a{
+        width: 100%;
+        display: block;
+    }
+    
+
+    nav.center.active .menu ul{
+        display: flex;
+    }
+
+
+    /*seção main do background*/
     .main .center .diferenciais{
         margin: 0 5%;
     }
@@ -1262,26 +1301,8 @@ button#contact-button:hover{
         margin-bottom: 5%;
     }
 
-    .menu{
-        display: none;
-    }
 
-    .menu-mobile{
-        display: block;
-        cursor: pointer;
-        font-size: 23px;
-    }
-
-    .menu-mobile:hover{
-        color: #124265;
-        transition: .3s;
-    }
-
-    .sobre-imagem .center .img-sobre-imagem{
-        width: 100%;
-        margin-bottom: 3%;
-    }
-
+    /*seção cliente*/
     #clientes .center{
         justify-content: space-between;
         gap: 5%;
@@ -1292,6 +1313,21 @@ button#contact-button:hover{
         flex-basis: 30%;        
     }
 
+
+    /*seção imagem-sobre*/
+    .sobre-imagem .center .img-sobre-imagem{
+        width: 100%;
+    }
+    
+    .sobre-imagem .center .conteudo-sobre-imagem{
+        flex-basis: 100%;
+    }
+
+    .sobre-imagem .center .conteudo-sobre-imagem h2{
+        margin: 1rem 0;
+    }
+
+    /*seção depoimentos*/
     .depoimento-chamada{
         margin: 2% 3%;
     }

@@ -1,17 +1,34 @@
-var el = window.document.querySelector('.menu-mobile-icon');
+//menu
+var botao_menu = window.document.getElementById('icone-menu-top');
 
-el.addEventListener('click', () => {
-    //alert('clicado');
-    let menuItens = window.document.querySelector('.menu-mobile-itens');
+botao_menu.addEventListener('click', () => {
+    let nav = window.document.getElementById('nav');
+    nav.classList.toggle('active');
 
-    if(menuItens.classList.contains('show')){
-        menuItens.classList.remove('show');
-        menuItens.classList.add('hide');
+    if(botao_menu.classList.contains('fa-bars')){
+        botao_menu.classList.remove('fa-bars');
+        botao_menu.classList.add('fa-times');
     }else{
-        menuItens.classList.add('show');
-        menuItens.classList.remove('hide');
+        botao_menu.classList.add('fa-bars');
+        botao_menu.classList.remove('fa-times');
     }
-})
+});
+
+
+//links
+var links_menu = window.document.querySelectorAll('.link');
+
+for(let contador = 0; contador< links_menu.length; contador++){
+    links_menu[contador].addEventListener('click', () => {
+        links_menu.forEach(element => {
+            if(element.classList.contains('active')){
+                element.classList.remove('active');
+                links_menu[contador].classList.add('active');
+            }
+        })
+    })
+}
+
 
 
 //faqs
