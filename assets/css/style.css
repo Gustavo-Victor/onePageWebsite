@@ -1,3 +1,4 @@
+/*reset*/
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
+/*cabeçalho*/
 header{
     background-color: white;
-    padding: 0.8rem 0;
+    padding: 1rem 4rem;
     width: 100%;
     border-bottom: 1px solid rgb(200, 200, 200);
     position: fixed;
@@ -17,6 +18,7 @@ header{
     z-index: 1000;
 }
 
+/*div centralizadora*/
 .center{
     max-width: 1100px;
     margin: 0 auto;
@@ -27,11 +29,19 @@ header{
     flex-wrap: wrap;
 }
 
-nav.center{
+/*navegação*/
+nav{
+    display: flex;
     justify-content: space-between;
+    min-width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
 }
 
-nav.center i{
+/*ícone da navegação*/
+nav i#icone-menu-top{
     font-size: 30px;
     transition: 0.3s ease-in-out;
     color: rgb(49, 49, 49);
@@ -42,10 +52,12 @@ nav.center i{
     cursor: pointer;
 }
 
-nav.center i:hover{
+/*ícone ao passar mouse por cima*/
+nav i#icone-menu-top:hover{
     color: #007bff;
 }
 
+/*configuração padrão pra links e itens de lista*/
 a{
     text-decoration: none;
 }
@@ -53,6 +65,22 @@ a{
 li{
     list-style-type: none;
 }
+
+/*configuração padrão pra os títulos e parágrafos principais da sessão */
+.titulo-sessao{
+    text-transform: uppercase;
+    color: #16507b;
+    font-size: 30px;
+    text-align: center;
+}
+
+.descricao-sessao{
+    color: gray;
+    font-size: 14px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
 
 /*menu*/
 .logo a{
@@ -105,7 +133,7 @@ li{
 }
 
 
-/*main*/
+/*sessão ou section principal*/
 .main{
     background-image: url('https://bootstrapmade.com/demo/templates/OnePage/assets/img/hero-bg.jpg');
     background-repeat: no-repeat;
@@ -121,15 +149,19 @@ li{
     margin: 60px 0;
 }
 
-.main .center .main_cta h2{
-    color: #16507b;   
+.main .center .main_cta h1{
+    color: #16507b;
     font-size: 45px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
 }
 
 .main .center .main_cta p{
     color: gray;
-    font-size: 19px;
-    margin: 10px 0 20px 0;
+    font-size: 20px;
+    margin: 0 0 2rem 0;
+    text-align: center;
 }
 
 .main .center .main_cta button{
@@ -163,8 +195,6 @@ li{
     transform: scale(1.1, 1.1);
 }  
 
-
-
 .main .center .diferenciais .diferente-single i{
     color: #16507b;
     font-size: 32px;
@@ -195,18 +225,6 @@ li{
 .about .call-about{
     width: 100%;
     text-align: center;
-}
-
-.call-about h2{
-    color: #16507b;  
-    text-align: center;
-    font-size: 30px;
-}
-
-.call-about p{
-    font-size: 14px;  
-    color: gray;
-    margin: 2% 0;
 }
 
 .about .content-about{
@@ -282,7 +300,7 @@ li{
 
 /*sobre imagem*/
 .sobre-imagem{
-    padding: 5% 0;
+    padding: 4% 0;
 }
 
 .sobre-imagem .center{
@@ -381,17 +399,6 @@ section.depoimentos .center{
     align-items: center;
 }
 
-.depoimento-chamada h2{
-    color: #16507b;
-    font-size: 30px;
-}
-
-.depoimento-chamada p{
-    color: gray;
-    font-size: 14px;
-    margin: 2% 0;
-}
-
 .carrossel{
     display: flex;
     width: 100%;
@@ -436,15 +443,8 @@ section.depoimentos .center{
     color: #8bbbb5;
 }
 
-.fa-quote-left {
-    margin-right: 4%;
-}
 
-.fa-quote-right{
-    margin-left: 4%;
-}
-
-
+/*sessão serviçõs*/
 #service-section{
     padding: 5% 0;
     width: 100%;
@@ -455,18 +455,6 @@ section.depoimentos .center{
     text-align: center;
     width: 100%;
     
-}
-
-#service-section .center h2{
-    text-transform: uppercase;
-    color: #16507b;
-    font-size: 30px;
-}
-
-#service-section .center > p{
-    color: gray;
-    font-size: 14px;
-    margin-top: 2%;
 }
 
 .service-container{
@@ -537,7 +525,6 @@ i.fa-archway:hover{
 }
 
 
-
 /*call to action*/
 .call-to-action.conquistas{
     background-color:#007bff;
@@ -576,19 +563,6 @@ i.fa-archway:hover{
 /*team*/
 .team.conquistas{   
     text-align: center;
-}
-
-.team.conquistas .center > h2{
-    text-transform: uppercase;
-    color: #16507b;
-    font-size: 30px;
-    text-align: center;
-}
-
-.team.conquistas .center > p{
-    color: gray;
-    font-size: 14px;
-    margin-top: 2%;
 }
 
 .team.conquistas .center{
@@ -675,20 +649,6 @@ i.fa-archway:hover{
     text-align: center;
     justify-content: center;
 }
-
-.pricing .center > h2{
-    text-transform: uppercase;
-    color: #16507b;
-    font-size: 30px;
-    text-align: center;   
-}
-
-.pricing .center p{
-    color: gray;
-    font-size: 14px;
-    margin: 2% 0;
-}
-
 
 .pricing .center .offers{
     display: flex;
@@ -806,20 +766,6 @@ i.fa-archway:hover{
     justify-content: center;
 }
 
-.faq.conquistas .center > h2{
-    text-transform: uppercase;
-    color: #16507b;
-    font-size: 30px;
-    text-align: center;
-}
-
-.faq.conquistas .center > p{
-    color: gray;
-    font-size: 14px;
-    margin: 2% 0;
-    text-align: center;
-}
-
 .faqs{
     display: flex;
     flex-direction: column;
@@ -869,7 +815,6 @@ i.fa-chevron-down{
     color: #0099ff;
 }
 
-
 .faqs .faq-single .answer{
     opacity: 0;
     overflow: hidden;
@@ -906,20 +851,6 @@ i.fa-chevron-down{
 .contact .center{
     justify-content: center;    
     padding: 0;
-}
-
-.contact .center > h2{
-    text-transform: uppercase;
-    color: #16507b;
-    font-size: 30px;
-    text-align: center; 
-}
-
-.contact .center > p{
-    color: gray;
-    font-size: 14px;
-    margin: 2% 0;
-    text-align: center;
 }
 
 .contact .center iframe{
@@ -989,7 +920,6 @@ i.fa-chevron-down{
     font-size: 14px;
     display: block;
 }
-
 
 .contact-form{
     flex-basis: 65%;
@@ -1242,13 +1172,16 @@ button#contact-button:hover{
 
 
 
-
-/*media query*/
+/*configuração pra quando tela do dispositivo estiver com igual ou menor que 768px*/
 @media screen and (max-width: 768px){
     
     /*menu*/
+    header{
+        width: 100%;
+        padding: 1rem;
+    }
 
-    nav.center{
+    nav{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;        
@@ -1266,7 +1199,7 @@ button#contact-button:hover{
         display: none;
     }
 
-    nav.center i{
+    nav i#icone-menu-top{
         display: block;
     }
 
@@ -1276,7 +1209,7 @@ button#contact-button:hover{
     }
     
 
-    nav.center.active .menu ul{
+    nav.active .menu ul{
         display: flex;
     }
 
@@ -1302,7 +1235,7 @@ button#contact-button:hover{
     }
 
 
-    /*seção cliente*/
+    /*seção clientes*/
     #clientes .center{
         justify-content: space-between;
         gap: 5%;
@@ -1327,6 +1260,7 @@ button#contact-button:hover{
         margin: 1rem 0;
     }
 
+
     /*seção depoimentos*/
     .depoimento-chamada{
         margin: 2% 3%;
@@ -1344,16 +1278,20 @@ button#contact-button:hover{
     }
 
 
+    /*seção conquistas*/
     .team.conquistas{
         padding: 4% 4%;   
         text-align: center;
     }
 
+
+    /*team*/
     .worker{        
         flex-basis: 100%;        
         margin-top: 5%;
     }
  
+    /*precificação*/
     .pricing .center .offer-single{
         flex-basis: 100%;
     }
@@ -1362,19 +1300,36 @@ button#contact-button:hover{
         padding: 1% 4%;
     }
 
+
+    /*faq*/
     .faq .center{
         padding: 1% 4%;
     }
 
-    .contact .center, .about .center, .sobre-imagem .center, #service-section .center, .call-to-action.conquistas .center, header nav.center{
+
+    /*arrumando padding das seções*/
+    .contact .center, .about .center, .sobre-imagem .center, #service-section .center, .call-to-action.conquistas .center, header nav{
         padding: 1% 4%;
     }
 
+
+    /*contato*/
     .communication, .contact-form{
         flex-basis: 100%;
+        margin: 1rem 0;
+    }
+
+    .linha{
+        display: block;
+    }
+
+    .linha input{
+        display: block;
+        width: 100%;
     }
 
 
+    /*footer*/
     .footer-info div, .social-media div{
         flex-basis: 100%;
         margin: 2% 0;

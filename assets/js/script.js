@@ -14,7 +14,6 @@ botao_menu.addEventListener('click', () => {
     }
 });
 
-
 //links
 var links_menu = window.document.querySelectorAll('.link');
 
@@ -28,8 +27,6 @@ for(let contador = 0; contador< links_menu.length; contador++){
         })
     })
 }
-
-
 
 //faqs
 var faqs = window.document.querySelectorAll('.faq-single');
