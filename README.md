@@ -6,14 +6,14 @@ Full one page website based on a template
 
 ## Table of contents
 
-- [About](#--about)
-- [Screenshots](#--screenshots)
-   - [Desktop](#--desktop)
-   - [Mobile](#--mobile)
-- [Learnings](#--learnings)
-- [Prerequisites](#--prerequisites)
-- [How to Contribute](#--how-to-contribute)
-- [Author](#--author)
+- [About](#-about)
+- [Screenshots](#-screenshots)
+   - [Desktop](#-desktop)
+   - [Mobile](#-mobile)
+- [Learnings](#-learnings)
+- [Prerequisites](#-prerequisites)
+- [How to Contribute](#-how-to-contribute)
+- [Author](#-author)
 - [License](#-license)
 
 ## 💻 About
