@@ -10,11 +10,11 @@ Full one page website based on a template
 - [Screenshots](#-screenshots)
    - [Desktop](#-desktop)
    - [Mobile](#-mobile)
-- [Learnings](#-learnings)
+- [What I learned](#-what-i-learned)
 - [Prerequisites](#-prerequisites)
 - [How to Contribute](#-how-to-contribute)
 - [Author](#-author)
-- [License](#-license)
+- [The License](#-the-license)
 
 ## 💻 About
 This project is a complete one-page website made in HTML, CSS and JavaScript.
@@ -38,7 +38,7 @@ The purpose of this project is to train development skills in these languages. T
 
 To see the project hosted on Github Pages click on [this link](https://gustavo-victor.github.io/onePageWebsite/)
 
-## 🗒️ Learnings
+## 🗒️ What I Learned
 
 Over the course of the project, I could learn more about CSS transform effects, responsive design using Media Queries, FlexBox, responsive menu and also learn how to make FAQ section in JavaScript.
 
@@ -66,7 +66,7 @@ If you want more help with writing markdown, I'd recommend checking out [The Mar
 - CodePen - [@gustavo_victor](https://codepen.io/gustavo_victor)
 - Linkedin - [@gustavo-victor](https://www.linkedin.com/in/gustavo-victor-575b93206/)
 
-## 📝License
+## 📝The License
 
 This project is under the [MIT license](./LICENSE).
 
